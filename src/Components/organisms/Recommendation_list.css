@@ -1,0 +1,29 @@
+.recommendation_sec{
+    background-color: #d1d5d9;
+    margin: 1rem ;
+    padding: 1rem;
+    border-radius: 10px;
+    /* height:350px; */
+}
+.recommendation_text{
+    font-size: 16px;
+    font-weight:bold;
+    
+}
+.Recommendation_list{
+    /* padding: 20px; */
+display: flex;
+overflow-x: auto;
+}
+.Recomm_Item_List{
+    display: flex;
+    gap: 1rem;
+    
+}
+ .Recommendation_list::-webkit-scrollbar {
+    display: none;
+  }
+.Recommendation_list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+   } 
