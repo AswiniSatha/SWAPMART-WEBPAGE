@@ -11,7 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+Link{
+text-decoration: none;
+color:grey;
+}
 :root {
   --color-primary: #CB1C8D;
   --color-secondary: #fff;

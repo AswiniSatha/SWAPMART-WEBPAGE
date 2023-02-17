@@ -10,6 +10,8 @@ import Footer from './Components/molecules/Footer';
 import Contact from './Components/pages/Contact';
 import HOME from './Components/pages/Home';
 import Product from './Components/pages/Productdetails';
+import Signup from './Components/pages/Signup';
+import Login from './Components/pages/SignIn'
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
     <Route path="SignIn" element={<SignIn/>}/>
     <Route path="Contact" element={<Contact/>}/>
     <Route path="/:id" element={<Product/>}/>
+    <Route path="Signup" element={<Signup/>}/>
+    <Route path="Login" element={<Login/>}/>
     </Routes>
 </Router>
 <Footer/>

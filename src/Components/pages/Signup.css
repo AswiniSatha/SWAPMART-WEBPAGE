@@ -5,10 +5,10 @@
 /* body{
     background:black !important;
 } */
-.Login_form {
+.Sign_form {
   background: #fff !important;
-  width:450px;
-  height:350px;
+  width:500px;
+  height:500px;
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
   margin-left: 500px;
@@ -23,7 +23,7 @@
     margin-bottom: 10px;
 }
 .signuplabel{
-    width:300px !important;
+    width:400px !important;
     margin-left: 50px !important;;
 }
 h1,h2,h3,h4,h5,h6,label,span {
@@ -51,9 +51,10 @@ h1,h2,h3,h4,h5,h6,label,span {
   border-radius: 15px;
   transition: all .3s;
 } */
-
-#login_input{
-    width:350px !important;
+.form-control{
+    width:400px !important;
+    margin-left: 50px !important;;
+    margin-bottom: 10px !important;
 }
 .auth-wrapper .form-control:focus {
   border-color: #ffffff;
@@ -78,12 +79,10 @@ h1,h2,h3,h4,h5,h6,label,span {
 }
 .btn-primary{
     background-color:black !important;
-    align-content: center; 
+    width:400px;
+    align-content: center;
+    margin-left: 55px;
     margin-top: 20px;
-}
-#login-btn{
-    width:350px;
-    margin-left: 50px;
 }
 .forgot-password a {
   color: #167bff;
