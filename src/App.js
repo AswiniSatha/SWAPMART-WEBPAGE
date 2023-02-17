@@ -3,7 +3,12 @@ import './App.css';
 import Header from './Components/molecules/Header';
 import CollapsibleExample from './Components/molecules/navbar';
 import Card_Item_List from './Components/organisms/Card_Item_List';
- import { BrowserRouter as Router, Routes,Route, Switch,Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+//  import { BrowserRouter as Router, Routes,Route, Switch,Link } from "react-router-dom";
 import About from './Components/pages/About';
 import SignIn from './Components/pages/SignIn';
 import Footer from './Components/molecules/Footer';
@@ -18,28 +23,32 @@ function App() {
   const mystyle={color:'red'};
   return (
     <div>
+      <Router>
 <CollapsibleExample/>
-{/* <Router>
 
-         <Switch>
+<Switch>
           <Route path="/about">
             <About/>
           </Route>
-          </Switch> 
-</Router> */}
-<Router>
-  <Routes>
-   
-     {/* <Route path="/" element={<ItemList/>}/>  */}
-    <Route path="/" element={<HOME/>}/>
-    <Route path="About" element={<About/>}/>
-    <Route path="SignIn" element={<SignIn/>}/>
-    <Route path="Contact" element={<Contact/>}/>
-    <Route path="/:id" element={<Product/>}/>
-    <Route path="Signup" element={<Signup/>}/>
-    <Route path="Login" element={<Login/>}/>
-    </Routes>
-</Router>
+          <Route path="/contact">
+            <Contact/>
+          </Route>
+          <Route path="/SignIn">
+            <Login/>
+          </Route>
+          <Route path="/Signup">
+            <Signup/>
+          </Route>
+          <Route path="/product/:id">
+            <Product/>
+          </Route>
+          <Route path="/">
+            <HOME />
+          </Route>
+        </Switch>
+      </Router>
+
+
 <Footer/>
 {/* <Card_Item_List/> */}
 
