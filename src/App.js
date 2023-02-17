@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 // import Header from './Components/molecules/Header';
 import CollapsibleExample from './Components/molecules/navbar';

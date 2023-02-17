@@ -48,7 +48,7 @@ function Footer() {
         </div>
         <div className='Footer_sec1_header'>
         <div className='Footer_sec1_header_content'>
-          <img className="logo_img" src={logo}></img>
+          <img className="logo_img" src={logo} alt="Logo"></img>
         </div>
         <div className='Footer_last_sec'>
           <img src={fb} alt="FB"></img>
