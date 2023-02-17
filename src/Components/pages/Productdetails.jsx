@@ -14,7 +14,7 @@ function Productdetails() {
         console.log(res.data)
         setProductDetails(res.data)
       } )
-    }, [])
+    },[])
     // const[totalprice, setTotalprice]=useState('');
     // const[discountprice, setDiscountprice]=useState('');
     // setTotalprice=productDetails.Itemprice.split("$");

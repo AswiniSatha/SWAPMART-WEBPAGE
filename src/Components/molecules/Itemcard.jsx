@@ -5,7 +5,7 @@ function Itemcard({Itemimg,Itemprice,Itemtitle, Itemplace,Itemdate}) {
   return (
     <div className='item-card-con'>
         <div className='item-img-div'>
-            <img src={Itemimg} alt="Product Image"></img>
+            <img src={Itemimg} alt="Product"/>
         </div>
         <div className='item-price'>
         ₹ {Itemprice}

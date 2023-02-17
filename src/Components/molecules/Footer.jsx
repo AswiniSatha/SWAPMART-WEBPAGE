@@ -51,10 +51,10 @@ function Footer() {
           <img className="logo_img" src={logo}></img>
         </div>
         <div className='Footer_last_sec'>
-          <img src={fb}></img>
-          <img src={instra}></img>
-          <img src={twitter}></img>
-          <img src={linkedin}></img>
+          <img src={fb} alt="FB"></img>
+          <img src={instra} alt="Instra"></img>
+          <img src={twitter} alt="twitter"></img>
+          <img src={linkedin} alt="linkedin"></img>
         </div>
         <div className="footer-brand-app-download">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="" />

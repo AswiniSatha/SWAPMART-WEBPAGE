@@ -41,7 +41,7 @@ for(let key in loginDetails)
   }else{
     setCount(1);
  }}
- if(count==1){
+ if(count===1){
   alert('Invalid Email or Password. Please try again');
   setEmail('');
  setPwd('');

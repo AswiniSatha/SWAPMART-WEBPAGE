@@ -29,11 +29,11 @@ function About() {
     </section>
     <section>
         <h3>Privacy and Security</h3>
-        <p>We take your privacy and security seriously and use the latest technologies to protect your personal information. Our privacy policy can be found <a href="">SwapMart Privacy.</a></p>
+        <p>We take your privacy and security seriously and use the latest technologies to protect your personal information. Our privacy policy can be found <a href="./About">SwapMart Privacy.</a></p>
     </section>
     <section>
         <h3>Return Policy</h3>
-        <p>We want you to be completely satisfied with your purchase. If you are not, we offer a 15 days return policy. Please refer to our return policy for more information <a href="">Our Return Policy.</a>.</p>
+        <p>We want you to be completely satisfied with your purchase. If you are not, we offer a 15 days return policy. Please refer to our return policy for more information <a href="./About">Our Return Policy.</a>.</p>
     </section>
     <section>
       <h3>Contact Us</h3>
