@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Components/molecules/Header';
+// import Header from './Components/molecules/Header';
 import CollapsibleExample from './Components/molecules/navbar';
-import Card_Item_List from './Components/organisms/Card_Item_List';
+// import Card_Item_List from './Components/organisms/Card_Item_List';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 //  import { BrowserRouter as Router, Routes,Route, Switch,Link } from "react-router-dom";
 import About from './Components/pages/About';
-import SignIn from './Components/pages/SignIn';
 import Footer from './Components/molecules/Footer';
 import Contact from './Components/pages/Contact';
 import HOME from './Components/pages/Home';
@@ -20,7 +19,6 @@ import Login from './Components/pages/SignIn'
 
 
 function App() {
-  const mystyle={color:'red'};
   return (
     <div>
       <Router>
