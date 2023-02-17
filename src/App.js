@@ -39,7 +39,7 @@ function App() {
           <Route path="/Signup">
             <Signup/>
           </Route>
-          <Route path="/product/:id">
+          <Route path="/:id">
             <Product/>
           </Route>
           <Route path="/">
