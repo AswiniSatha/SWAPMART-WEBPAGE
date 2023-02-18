@@ -6,7 +6,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Productdetails.css'
 
 function Productdetails() {
-    let { id } = useParams();
+  let { id } = useParams();
      const [productDetails, setProductDetails] = useState('');
      useEffect (() => {
       axios.get(`https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/item-list/${id}.json`)
@@ -14,7 +14,8 @@ function Productdetails() {
         console.log(res.data)
         setProductDetails(res.data)
       } )
-    },[])
+    })
+
     // const[totalprice, setTotalprice]=useState('');
     // const[discountprice, setDiscountprice]=useState('');
     // setTotalprice=productDetails.Itemprice.split("$");

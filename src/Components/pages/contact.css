@@ -148,20 +148,10 @@ height: 400px ;
   }
    .conatct_sec2_list2 img{
     width:40px;
+    height:40px;
     /* margin-bottom: 10px; */
      margin-right: 20px; 
      margin-left: 10px;
   } 
- 
-  #contact_sec2_gif{
-    /* margin-left: -110px;  */
-     /* margin-bottom: -30px;   */
-  }
-  #contact_sec2_gif_1
-  {
-    margin-left: -140px;  
-  }
-  #contact_sec2_gif_2{
-    margin-left: -150px; 
-  }
+
  
