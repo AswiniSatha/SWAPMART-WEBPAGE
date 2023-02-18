@@ -9,7 +9,7 @@ justify-content: center;
 align-items: center;
 padding: 130px;
 padding-left:-100px;
-height:900px;
+height:800px;
 
 }
 .contact_sec1_list1{
@@ -17,7 +17,7 @@ height:900px;
     margin-left: 130px;
     padding-left: 50px;
     padding-top: 20px;
-    width:40%;
+    width:300px;
     height:400px;
     /*background: #3C3B3F;  /* fallback for old browsers */
 /*background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
@@ -120,7 +120,7 @@ color:rgba(0, 0, 0, 0.712);
   .contact_sec2{
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-width:40%;
+width:300px;
 padding-left: 30px;
 align-items: center;
 margin-right: 30px;
