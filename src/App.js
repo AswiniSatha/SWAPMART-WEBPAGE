@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 // import Header from './Components/molecules/Header';
 import CollapsibleExample from './Components/molecules/navbar';
 // import Card_Item_List from './Components/organisms/Card_Item_List';
@@ -15,13 +16,19 @@ import HOME from './Components/pages/Home';
 import Product from './Components/pages/Productdetails';
 import Signup from './Components/pages/Signup';
 import Login from './Components/pages/SignIn'
-
-
+import { useState } from 'react';
+import Cart  from './Components/pages/Cart';
 function App() {
+
+  const [cartList,setCartList]=React.useState([]);
+  const addTocart=(item)=>{
+    setCartList([...cartList,item])
+  }
+  console.log(cartList);
   return (
     <div>
       <Router>
-<CollapsibleExample/>
+<CollapsibleExample cardList={cartList} />
 
 <Switch>
           <Route path="/About">
@@ -37,10 +44,13 @@ function App() {
             <Signup/>
           </Route>
           <Route path="/:id">
-            <Product/>
+            <Product addTocart={addTocart}/>
           </Route>
           <Route path="/">
             <HOME/>
+          </Route>
+          <Route path="/Cart">
+            <Cart/>
           </Route>
         </Switch>
       </Router>
