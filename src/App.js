@@ -24,10 +24,10 @@ function App() {
 <CollapsibleExample/>
 
 <Switch>
-          <Route path="/about">
+          <Route path="/About">
             <About/>
           </Route>
-          <Route path="/contact">
+          <Route path="/Contact">
             <Contact/>
           </Route>
           <Route path="/SignIn">
@@ -40,7 +40,7 @@ function App() {
             <Product/>
           </Route>
           <Route path="/">
-            <HOME />
+            <HOME/>
           </Route>
         </Switch>
       </Router>
