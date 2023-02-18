@@ -16,7 +16,6 @@ import HOME from './Components/pages/Home';
 import Product from './Components/pages/Productdetails';
 import Signup from './Components/pages/Signup';
 import Login from './Components/pages/SignIn'
-import { useState } from 'react';
 import Cart  from './Components/pages/Cart';
 function App() {
 
@@ -28,7 +27,7 @@ function App() {
   return (
     <div>
       <Router>
-<CollapsibleExample cardList={cartList} />
+<CollapsibleExample cartList={cartList} />
 
 <Switch>
           <Route path="/About">
