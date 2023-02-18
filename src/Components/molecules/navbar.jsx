@@ -6,7 +6,7 @@ import logo from'../Assets/logo_1.png';
 import './navbar.css';
 import Badge from "react-bootstrap/Badge";
 import {
-  BrowserRouter as Router,Link
+  BrowserRouter as Router
 } from "react-router-dom";
 
 function CollapsibleExample({cartList}) {
