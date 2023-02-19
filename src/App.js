@@ -16,7 +16,7 @@ import HOME from './Components/pages/Home';
 import Product from './Components/pages/Productdetails';
 import Signup from './Components/pages/Signup';
 import Login from './Components/pages/SignIn'
-import Cart  from './Components/pages/Cart';
+import CartItem  from './Components/pages/CartItem';
 function App() {
 
   const [cartList,setCartList]=React.useState([]);
@@ -42,14 +42,14 @@ function App() {
           <Route path="/Signup">
             <Signup/>
           </Route>
+          <Route path="/CartItem">
+            <CartItem cartList={cartList}/>
+          </Route>
           <Route path="/:id">
             <Product addTocart={addTocart}/>
           </Route>
           <Route path="/">
             <HOME/>
-          </Route>
-          <Route path="/Cart">
-            <Cart/>
           </Route>
         </Switch>
       </Router>

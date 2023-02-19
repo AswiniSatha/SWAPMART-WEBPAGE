@@ -19,12 +19,12 @@ function Productdetails({addTocart}) {
     // const[totalprice, setTotalprice]=useState('');
     // const[discountprice, setDiscountprice]=useState('');
     // setTotalprice=productDetails.Itemprice.split("$");
-    let discountprice=productDetails.Itemprice-(productDetails.Itemprice*(productDetails.discount/100));
+    // let discountprice=productDetails.Itemprice-(productDetails.Itemprice*(productDetails.discount/100));
 
   return (
     <Container>
     {
-      productDetails.length===0
+      productDetails=== ' '
       ? 'Loading...'
       : (
           <Row className='product-detail-row'>
@@ -39,7 +39,7 @@ function Productdetails({addTocart}) {
                 <div className="product-detail_price_main">
                   <p className='product-detail_price_current'>
                     ₹ {
-                     discountprice
+                     productDetails.Itemprice-(productDetails.Itemprice*(productDetails.discount/100))
                     }
                   </p>
                   <p className='product-detail_price_original'>
