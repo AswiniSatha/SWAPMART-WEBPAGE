@@ -1,9 +1,10 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
-}
+} */
 
 .contact_sec1{
+  margin-top: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
