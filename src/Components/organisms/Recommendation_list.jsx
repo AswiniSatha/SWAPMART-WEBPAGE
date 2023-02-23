@@ -27,7 +27,7 @@ function Recommendation_list() {
     <div className='Recommendation_list'>
     <div className='Recomm_Item_List'>
       {itemData.map((item,index)=>(
-            <Link to={`/${item.id}`} key={index}>
+            <Link to={`/product${item.id}`} key={index}>
 <Itemcard key={index} Itemimg={item.Itemimg} Itemprice={item.Itemprice} 
 Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} />
 </Link>))}

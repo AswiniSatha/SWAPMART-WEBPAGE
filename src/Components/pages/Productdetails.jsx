@@ -98,4 +98,4 @@ function Productdetails({addTocart}) {
   </Container>
   )
 }
-export default Productdetails
+export default Productdetails;

@@ -1,14 +1,7 @@
 import './App.css';
 import React from 'react'
-// import Header from './Components/molecules/Header';
 import CollapsibleExample from './Components/molecules/navbar';
-// import Card_Item_List from './Components/organisms/Card_Item_List';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-//  import { BrowserRouter as Router, Routes,Route, Switch,Link } from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import About from './Components/pages/About';
 import Footer from './Components/molecules/Footer';
 import Contact from './Components/pages/Contact';
@@ -16,11 +9,11 @@ import HOME from './Components/pages/Home';
 import Product from './Components/pages/Productdetails';
 import Signup from './Components/pages/Signup';
 import Login from './Components/pages/SignIn'
-import CartItem  from './Components/pages/CartItem';
+import Cart from './Components/pages/Cart';
 function App() {
 
   const [cartList,setCartList]=React.useState([]);
-  const addTocart=(item)=>{
+  const addTocart =(item)=>{
     setCartList([...cartList,item])
   }
   console.log(cartList);
@@ -28,7 +21,6 @@ function App() {
     <div>
       <Router>
 <CollapsibleExample cartList={cartList} />
-
 <Switch>
           <Route path="/About">
             <About/>
@@ -42,10 +34,10 @@ function App() {
           <Route path="/Signup">
             <Signup/>
           </Route>
-          <Route path="/CartItem">
-            <CartItem cartList={cartList}/>
+          <Route path="/Cart">
+            <Cart cartList={cartList}/>
           </Route>
-          <Route path="/:id">
+          <Route path="/product:id">
             <Product addTocart={addTocart}/>
           </Route>
           <Route path="/">
@@ -53,8 +45,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
-
 <Footer/>
 {/* <Card_Item_List/> */}
 
@@ -87,9 +77,6 @@ function App() {
    productexchnage="Upto $17000 off on Exchange"/>
     */}
      </div>
-
-  );
+  )
 }
-
 export default App;
-

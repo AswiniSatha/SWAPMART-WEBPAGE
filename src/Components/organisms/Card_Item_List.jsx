@@ -87,7 +87,7 @@ function Card_Item_List() {
     <div className='Card_Item_List'>
       {itemData.length===0?<h3>No Product Found</h3>
       :itemData.map((item,index)=>(
-            <Link to={`/${item.id}`} key={index}>
+            <Link to={`/product${item.id}`} key={index}>
             <Itemcard key={index} Itemimg={item.Itemimg} Itemprice={item.Itemprice} 
             Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} />
             </Link>))}
