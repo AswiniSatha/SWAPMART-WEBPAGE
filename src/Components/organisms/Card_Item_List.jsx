@@ -50,6 +50,10 @@ function Card_Item_List() {
       // ]
       
       const [itemData,setItemData]=React.useState([]);
+      const [bookData,setBookData]=React.useState([]);
+      const [furntData,setFurntData]=React.useState([]);
+      const [bagData,setBagData]=React.useState([]);
+
       // React.useEffect(()=>{
       // fetch("https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/item-list.json")
       // .then(response=>response.json()).then(data=>{
@@ -79,20 +83,98 @@ function Card_Item_List() {
       }).catch(error=>{
             console.log(error)
       })},[]);
+      React.useEffect(()=>{
+            axios.get("https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/book-list.json")
+            .then(response=>{  
+                  let bookData=[];
+                  for(let key in response.data)
+                  {
+                       // console.log(response[key]);
+                       bookData.push({...response.data[key],id:key});
+                  }
+                  setBookData(bookData);
+                  console.log(bookData);
+      
+            }).catch(error=>{
+                  console.log(error)
+            })},[]);
+
+            React.useEffect(()=>{
+                  axios.get("https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/furntuire-list.json")
+                  .then(response=>{  
+                        let furntData=[];
+                        for(let key in response.data)
+                        {
+                             // console.log(response[key]);
+                             furntData.push({...response.data[key],id:key});
+                        }
+                        setFurntData(furntData);
+                        console.log(furntData);
+            
+                  }).catch(error=>{
+                        console.log(error)
+                  })},[]);
+                  React.useEffect(()=>{
+                        axios.get("https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/Bag-list.json")
+                        .then(response=>{  
+                              let bagData=[];
+                              for(let key in response.data)
+                              {
+                                   // console.log(response[key]);
+                                   bagData.push({...response.data[key],id:key});
+                              }
+                              setBagData(bagData);
+                              console.log(bagData);
+                  
+                        }).catch(error=>{
+                              console.log(error)
+                        })},[]);
       // {itemData.map((item,index)=>(
       //       <Itemcard key={index} Itemimg={item.Itemimg} Itemprice={item.Itemprice} 
       //       Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} />))}
   return (
-      <div><h3>Electronics</h3>
+      <div>
+      <div ><p className='Card_title_text'>Electronics</p>
     <div className='Card_Item_List'>
       {itemData.length===0?<h3>No Product Found</h3>
       :itemData.map((item,index)=>(
             <Link to={`/product${item.id}`} key={index}>
             <Itemcard key={index} Itemimg={item.Itemimg} Itemprice={item.Itemprice} 
-            Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} />
+            Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} discount={item.discount} />
             </Link>))}
         </div>
         </div>
+         <div ><p className='Card_title_text'>Books</p>
+         <div className='Book_Item_List'>
+           {bookData.length===0?<h3>No Product Found</h3>
+           :bookData.map((item,index)=>(
+                 <Link to={`/product${item.id}`} key={index}>
+                 <Itemcard key={index} Itemimg={item.Itemimg} Itemprice={item.Itemprice} 
+                 Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} discount={item.discount} />
+                 </Link>))}
+             </div>
+             </div>
+             <div ><p className='Card_title_text'>Furnitures</p>
+             <div className='Book_Item_List'>
+               {furntData.length===0?<h3>No Product Found</h3>
+               :furntData.map((item,index)=>(
+                     <Link to={`/product${item.id}`} key={index}>
+                     <Itemcard key={index} Itemimg={item.Itemimg} Itemprice={item.Itemprice} 
+                     Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} discount={item.discount} />
+                     </Link>))}
+                 </div>
+                 </div>
+                 <div ><p className='Card_title_text'>Bags</p>
+             <div className='Book_Item_List'>
+               {bagData.length===0?<h3>No Product Found</h3>
+               :bagData.map((item,index)=>(
+                     <Link to={`/product${item.id}`} key={index}>
+                     <Itemcard key={index} Itemimg={item.Itemimg} Itemprice={item.Itemprice} 
+                     Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} discount={item.discount} />
+                     </Link>))}
+                 </div>
+                 </div>
+                 </div>
   )
       }
 

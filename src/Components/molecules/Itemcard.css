@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=M+PLUS+1&family=Noto+Sans&family=Poppins:wght@500&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     gap:0px;
+    font-family: 'Hind', sans-serif;
+font-family: 'M PLUS 1', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none !important;
@@ -24,24 +29,50 @@ a{
 }
 .item-img-div{
     width:100%;
-    height:200px;
+    height:190px;
     object-fit:cover;
+
 }
 .item-img-div img{
    width:100%;
     height:100%;
     object-fit:cover;
 }
+.item-price,.item-title{
+    font-size:15px;
+    font-weight: bolder;
+    
+}
+.Strike_price{
+    /* padding-left: 10px; */
+    top:-7px !important;
+    font-size: 10px;
+    position:relative;
+    font-weight: lighter !important;
+    left:5px;
+    text-decoration: line-through;
+}
+.Strike_price_discount{
+    color: var(--color-primary);
+    font-weight: 800;
+    left:5px; 
+    top:-7px !important; 
+}
 .item-price{
-    font-size:16px;
-    font-weight: bold;
+    padding-top: 15px;
+}
+.item-price span{
+font-size: 12px;
+top: -2px;
+position: relative;
+
 }
 .item-place_date
 {
     display:flex;
    justify-content: space-between;
    align-items: center;
-   font-size: 11px;
+   font-size: 12px !important;
    font-weight: lighter;
    margin-top: 5px;
    color:gray;

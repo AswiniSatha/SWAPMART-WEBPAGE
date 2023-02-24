@@ -4,10 +4,10 @@ import Itemcard from '../molecules/Itemcard';
 import './Recommendation_list.css';
 import { Link } from 'react-router-dom';
 
-function Recommendation_list() {
+function Newcollection_list() {
     const [itemData,setItemData]=React.useState([]);
     React.useEffect(()=>{
-      axios.get("https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/item-list.json")
+      axios.get("https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/Newcollection-list.json")
       .then(response=>{  
             let itemData=[];
             for(let key in response.data)
@@ -23,7 +23,7 @@ function Recommendation_list() {
       })},[]);
   return (
     <section className="recommendation_sec">
-    <div className='recommendation_text'><span>Recommendations</span>
+    <div className='recommendation_text'><span>New Deals</span>
     <div className='Recommendation_list'>
     <div className='Recomm_Item_List'>
       {itemData.map((item,index)=>(
@@ -38,4 +38,4 @@ Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} d
   )
 }
 
-export default Recommendation_list
+export default Newcollection_list

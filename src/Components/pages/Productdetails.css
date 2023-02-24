@@ -13,7 +13,8 @@
     border-radius: 15px;
 }
 .product-detail_img {
-    width: 80%;
+    max-width: 80%;
+    max-height:400px;
     border-radius: 15px;
 }
 .product-detail-col-r h1 {
@@ -40,6 +41,7 @@
 .product-detail_price_current {
     font-size: 24px;
     font-weight: 600;
+    color: black;
 }
 .product-detail_price_original {
     font-size: 16px;

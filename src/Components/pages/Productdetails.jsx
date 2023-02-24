@@ -7,14 +7,40 @@ import './Productdetails.css'
 
 function Productdetails({addTocart}) {
   let { id } = useParams();
+  console.log(id);
      const [productDetails, setProductDetails] = useState('');
      useEffect (() => {
       axios.get(`https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/item-list/${id}.json`)
       .then(res => {
-        // console.log(res.data)
-        setProductDetails(res.data)
+        if(res.data===null){
+          axios.get(`https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/book-list/${id}.json`)
+          .then(res=>{
+            if(res.data===null){
+              axios.get(`https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/furntuire-list/${id}.json`)
+              .then(res=>{
+                if(res.data===null){
+                  axios.get(`https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/Bag-list/${id}.json`)
+                  .then(res=>{
+                    if(res.data===null){
+                      axios.get(`https://fir-react-fd4d2-default-rtdb.asia-southeast1.firebasedatabase.app/Newcollection-list/${id}.json`)
+                      .then(res=>{
+                        setProductDetails(res.data)})
+                      }
+                      else{setProductDetails(res.data)}
+              })}
+              else{setProductDetails(res.data)}  
+            })}
+              else{setProductDetails(res.data)}      
+        })
+      }
+        else{setProductDetails(res.data)}
       } )
     })
+  
+    // console.log(bookDetails);
+    // console.log(productDetails);
+    // setProductDetails
+
 
     // const[totalprice, setTotalprice]=useState('');
     // const[discountprice, setDiscountprice]=useState('');
@@ -39,7 +65,7 @@ function Productdetails({addTocart}) {
                 <div className="product-detail_price_main">
                   <p className='product-detail_price_current'>
                     ₹ {
-                     productDetails.Itemprice-(productDetails.Itemprice*(productDetails.discount/100))
+                     Math.round(productDetails.Itemprice-(productDetails.Itemprice*(productDetails.discount/100)))
                     }
                   </p>
                   <p className='product-detail_price_original'>
