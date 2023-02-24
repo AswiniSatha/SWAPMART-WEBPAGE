@@ -43,13 +43,10 @@ function CollapsibleExample({cartList}) {
           </Nav>
           <Nav><NavDropdown title="Category" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Electronics</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Hyderabad</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Mumbai</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Books</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Furnitures</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Bags</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Bangalore
-              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
