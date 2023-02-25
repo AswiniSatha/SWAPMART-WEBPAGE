@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import Homebanner from '../Assets/img/Home_banner_4.png';
 
 function About() {
   return (
@@ -7,6 +8,7 @@ function About() {
     <header>
       <h1>About Us</h1>
     </header>
+    <img src={Homebanner} alt="" />
     <section>
       <h3>Our Story</h3>
       <p>We started SwapMart with a simple goal in mind - to make shopping easy and accessible for everyone. With years of experience in the e-commerce industry, we saw an opportunity to bring a fresh approach to online shopping and provide customers with a seamless shopping experience.</p>

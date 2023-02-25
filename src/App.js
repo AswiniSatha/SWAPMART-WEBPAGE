@@ -17,6 +17,10 @@ function App() {
     setCartList([...cartList,item])
   }
   console.log(cartList);
+  const removeFromCart = (item) => {
+    setCartList(cartList.filter((cartItem) => cartItem !== item))
+  }
+  
   return (
     <div>
       <Router>
@@ -34,12 +38,13 @@ function App() {
           <Route path="/Signup">
             <Signup/>
           </Route>
-          <Route path="/Cart">
-            <Cart cartList={cartList}/>
-          </Route>
           <Route path="/product:id">
             <Product addTocart={addTocart}/>
           </Route>
+          <Route path="/Cart">
+            <Cart cartList={cartList}/>
+          </Route>
+          
           <Route path="/">
             <HOME/>
           </Route>
