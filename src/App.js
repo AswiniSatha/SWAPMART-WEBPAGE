@@ -26,22 +26,22 @@ function App() {
       <Router>
 <CollapsibleExample cartList={cartList} />
 <Switch>
-          <Route path="/About">
+          <Route path="/about">
             <About/>
           </Route>
-          <Route path="/Contact">
+          <Route path="/contact">
             <Contact/>
           </Route>
-          <Route path="/SignIn">
+          <Route path="/signin">
             <Login/>
           </Route>
-          <Route path="/Signup">
+          <Route path="/signup">
             <Signup/>
           </Route>
           <Route path="/product:id">
             <Product addTocart={addTocart}/>
           </Route>
-          <Route path="/Cart">
+          <Route path="/cart">
             <Cart cartList={cartList}/>
           </Route>
           

@@ -10,7 +10,13 @@
     width:25px !important; 
     
 }
-
+.nav-item {
+    color: #dedede;
+    text-decoration: none;
+    margin: 0px 10px;
+    align-items: center;
+    /* padding-top: 20px; */
+}
 .navbar-nav a .badge {
     position: absolute;
     right: -6px;
