@@ -6,7 +6,7 @@ import logo from'../Assets/logo_1.png';
 import './navbar.css';
 import Badge from "react-bootstrap/Badge";
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router, Link
 } from "react-router-dom";
 
 function CollapsibleExample({cartList}) {
@@ -24,11 +24,11 @@ function CollapsibleExample({cartList}) {
              
              
               {/* <Link className='nav-item'  to="/">Home</Link> */}
-            {/* <Link  to={'./About'}>About</Link>
-             <Link  to={'./Contact'}>Contact</Link> */}
+           <Link  to='/About'>About</Link>
+             <Link  to='/Contact'>Contact</Link> 
              <Nav.Link href="./">Home</Nav.Link> 
-            <Nav.Link href="./About">About</Nav.Link> 
-             <Nav.Link href="./Contact">Contact</Nav.Link>
+            {/* <Nav.Link href="./About">About</Nav.Link>  */}
+             {/* <Nav.Link href="./Contact">Contact</Nav.Link> */}
           
             <NavDropdown title="Places" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Delhi</NavDropdown.Item>
