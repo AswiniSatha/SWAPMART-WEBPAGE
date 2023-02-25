@@ -17,9 +17,6 @@ function App() {
     setCartList([...cartList,item])
   }
   console.log(cartList);
-  const removeFromCart = (item) => {
-    setCartList(cartList.filter((cartItem) => cartItem !== item))
-  }
   
   return (
     <div>
