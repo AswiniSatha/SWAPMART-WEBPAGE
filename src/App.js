@@ -17,7 +17,9 @@ function App() {
     setCartList([...cartList,item])
   }
   console.log(cartList);
-  
+  const removeFromCart = (item) => {
+    setCartList(cartList.filter((cartItem) => cartItem.id !== item.id))
+  }
   return (
     <div>
       <Router>
@@ -39,7 +41,7 @@ function App() {
             <Product addTocart={addTocart}/>
           </Route>
           <Route path="/cart">
-            <Cart cartList={cartList}/>
+            <Cart cartList={cartList} removeFromCart={removeFromCart}/>
           </Route>
           
           <Route path="/">
