@@ -12,16 +12,15 @@ import {
 function CollapsibleExample({cartList}) {
   return (
     <div className='header'>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg"  variant="dark">
       <Container>
-        <Navbar.Brand href="#home">
+        {/* <Navbar.Brand href="./Home">
            <img src={logo} width="100px" height="60px" alt="Logo"></img> 
-        </Navbar.Brand>
+        </Navbar.Brand> */}
+        <Link to='/'><img src={logo} width="100px" height="60px" alt="Logo"></img> </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-             
-             
           <Link className='nav-link'  to="/">Home</Link>
           <Link className='nav-link' to='/about'>About</Link>
           <Link className='nav-link' to='/contact'>Contact</Link> 
@@ -39,10 +38,10 @@ function CollapsibleExample({cartList}) {
             </NavDropdown>
           </Nav>
           <Nav><NavDropdown title="Category" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Electronics</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Books</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Furnitures</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Bags</NavDropdown.Item>
+              <NavDropdown.Item href="#electronics">Electronics</NavDropdown.Item>
+              <NavDropdown.Item href="#books">Books</NavDropdown.Item>
+              <NavDropdown.Item href="#furnitures">Furnitures</NavDropdown.Item>
+              <NavDropdown.Item href="#bags">Bags</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
           </Nav>

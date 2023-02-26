@@ -134,7 +134,7 @@ function Card_Item_List() {
       //       Itemtitle={item.Itemtitle} Itemplace={item.Itemplace} Itemdate={item.Itemdate} />))}
   return (
       <div>
-      <div ><p className='Card_title_text'>Electronics</p>
+      <div id='electronics'><p className='Card_title_text'>Electronics</p>
     <div className='Card_Item_List'>
       {itemData.length===0?<h3>No Product Found</h3>
       :itemData.map((item,index)=>(
@@ -144,7 +144,7 @@ function Card_Item_List() {
             </Link>))}
         </div>
         </div>
-         <div ><p className='Card_title_text'>Books</p>
+         <div id='books'><p className='Card_title_text'>Books</p>
          <div className='Book_Item_List'>
            {bookData.length===0?<h3>No Product Found</h3>
            :bookData.map((item,index)=>(
@@ -154,7 +154,7 @@ function Card_Item_List() {
                  </Link>))}
              </div>
              </div>
-             <div ><p className='Card_title_text'>Furnitures</p>
+             <div id='furnitures' ><p className='Card_title_text'>Furnitures</p>
              <div className='Book_Item_List'>
                {furntData.length===0?<h3>No Product Found</h3>
                :furntData.map((item,index)=>(
@@ -164,7 +164,7 @@ function Card_Item_List() {
                      </Link>))}
                  </div>
                  </div>
-                 <div ><p className='Card_title_text'>Bags</p>
+                 <div id='bags' ><p className='Card_title_text'>Bags</p>
              <div className='Book_Item_List'>
                {bagData.length===0?<h3>No Product Found</h3>
                :bagData.map((item,index)=>(

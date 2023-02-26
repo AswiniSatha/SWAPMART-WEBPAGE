@@ -1,5 +1,9 @@
+.bg-dark{
+    background-color: #272727 !important;  
+}
 .header{
     height:80px;
+    background-color: #272727 !important;
 }
 
 .cart_symbol svg{
