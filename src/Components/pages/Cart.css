@@ -105,9 +105,16 @@ justify-content: space-between;
 .cart_Summary_item{
     display: flex;
     justify-content: space-between;
-    font-weight: lighter;
     color: #565959;
     line-height: 35px;
+}
+.cart_Summary_item_detail{
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    color: #090b0b;
+    line-height: 35px;
+    font-size: 12px !important;  
 }
 .cart_subtotal{
     display: flex; 

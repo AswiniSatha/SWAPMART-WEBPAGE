@@ -55,13 +55,13 @@ function CartItem({ cartList, removeFromCart }) {
               <hr/>
             </div>
             <div className='cart_Summary_item'>
-            <span>ITEMS  </span>
-            <span>Price</span>
+            <span><b>ITEMS </b> </span>
+            <span><b>Price</b></span>
             </div>
             {
                       cartList.map((item, index) => {
                         return (
-            <div className='cart_Summary_item'>
+            <div className='cart_Summary_item_detail'>
               <span>{item.Itemtitle}</span>
               <span>₹{
                      Math.round(item.Itemprice-(item.Itemprice*(item.discount/100)))}</span>
