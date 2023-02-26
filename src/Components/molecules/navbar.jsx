@@ -5,9 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from'../Assets/logo_1.png';
 import './navbar.css';
 import Badge from "react-bootstrap/Badge";
-import {
-  BrowserRouter as Router, Link
-} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 function CollapsibleExample({cartList}) {
   return (
